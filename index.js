@@ -1,9 +1,10 @@
 
-let number = 10;
+const circle ={
+  radius: 1,
+  draw(){
+    console.log('draw');
+  }
+};
 
-function increase(number){
-  number++;
-}
-
-increase (number);
-console.log(number)
+for(let key in circle)
+  console.log(key);
