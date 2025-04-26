@@ -7,4 +7,7 @@ const circle ={
 };
 
 for(let key in circle)
-  console.log(key);
+  console.log(circle[key]);
+
+for(let key of circle)
+  console.log(key)
