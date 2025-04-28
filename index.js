@@ -1,14 +1,12 @@
+const address={
+  street:"d",
+  city: "ama",
+  zipCode: 9090
+}
+function showAddress(address){
+  for(let key in address)
+    console.log(key, address[key])
 
-const circle ={
-  radius: 1,
-  draw(){
-    console.log('draw');
-  }
-};
+}
 
-// const another = {}
-// for(let key in circle)
-//   another[key]= circle[key]
-
-const another = Object.assign({}, circle)
-console.log(another)
+showAddress(address)
