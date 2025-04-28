@@ -6,8 +6,9 @@ const circle ={
   }
 };
 
-for(let key in circle)
-  console.log(circle[key]);
+// const another = {}
+// for(let key in circle)
+//   another[key]= circle[key]
 
-for(let key of circle)
-  console.log(key)
+const another = Object.assign({}, circle)
+console.log(another)
