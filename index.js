@@ -1,21 +1,14 @@
 
-let address = new Address('a', 'b', 'c');
-
-console.log(address)
-// Factory function
-function adressCreate(street, city, zipCode){
-  return {
-    street, city,zipCode
+function createPerson(name, age){
+  return{
+    name,
+    age,
+    greet(){
+      console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old ` );
+      
+    }
   }
-}
-
-// Constracter 
-
-function Address(street, city, zipCode){
-  this.street = street;
-  this.city=city;
-  this.zipCode=zipCode
-  
 
 }
-
+const person = createPerson('Ali', 30)
+person.greet();
