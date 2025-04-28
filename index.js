@@ -1,14 +1,11 @@
-
-function createPerson(name, age){
-  return{
-    name,
-    age,
-    greet(){
-      console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old ` );
-      
-    }
+function Person(name, age){
+  this.name =name;
+  this.age =age;
+  this.greet=function() {
+   console.log(`Hi, I'm ${this.name} and ${this.age} years`);   
   }
-
 }
-const person = createPerson('Ali', 30)
-person.greet();
+
+const person1 = new Person('Abdi', 25)
+
+person1.greet();
