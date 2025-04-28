@@ -1,12 +1,21 @@
-const address={
-  street:"d",
-  city: "ama",
-  zipCode: 9090
+
+let address = new Address('a', 'b', 'c');
+
+console.log(address)
+// Factory function
+function adressCreate(street, city, zipCode){
+  return {
+    street, city,zipCode
+  }
 }
-function showAddress(address){
-  for(let key in address)
-    console.log(key, address[key])
+
+// Constracter 
+
+function Address(street, city, zipCode){
+  this.street = street;
+  this.city=city;
+  this.zipCode=zipCode
+  
 
 }
 
-showAddress(address)
