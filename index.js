@@ -1,26 +1,9 @@
 
-// Factory function
+// Concatnet
 
-function createAddress(street, city, ZipCode){
-  return{
-    street,
-    city,
-    ZipCode
-  }
+const first =[1, 2, 3];
+const second = [4, 5, 6];
 
-}
-const address = createAddress('a', 'b', 'c');
-console.log(address);
-
-
-
-// Counstroctor function
-function Address(street, city, ZipCode){
-  this.street=street;
-  this.city = city;
-  this.ZipCode=ZipCode
-}
-
-const address1 = new Address('a', 'b', 'c')
-
-console.log(address1);
+// const combined = second.concat(first)
+const combined =[...first, 'a', ...second, 'b']
+console.log(combined);
