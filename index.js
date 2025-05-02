@@ -1,7 +1,16 @@
 
+const courses =[
+    {id:1, name: "Node.js" },
+    {id:2, name: "javaScript" }
+]
 
-const numbers = [1,2,3];
-for(number of numbers)
-    console.log(number);
+courses.sort(function(a, b){
+    const nameA = a.name.toLocaleLowerCase();
+    const nameB = b.name.toLocaleLowerCase();
+    if(nameA < nameB ) return -1;
+    if(nameA > nameB) return 1;
+    return 0;
+})
 
-numbers.forEach((number, index)=> console.log(number, index))
+
+console.log(courses);
