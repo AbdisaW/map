@@ -1,9 +1,7 @@
 
-// Concatnet
 
-const first =[1, 2, 3];
-const second = [4, 5, 6];
+const numbers = [1,2,3];
+for(number of numbers)
+    console.log(number);
 
-// const combined = second.concat(first)
-const combined =[...first, 'a', ...second, 'b']
-console.log(combined);
+numbers.forEach((number, index)=> console.log(number, index))
